@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+    <main>
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cartItems"></ul>
+            <div id="cartTotal">
+                <span>Total: $<span id="totalPrice">0.00</span></span>
+            </div>
+        </section>
+        <section id="checkout">
+            <h2>Checkout</h2>
+            <form id="checkoutForm">
+                <label>
+                    Name:
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    Address:
+                    <input type="text" name="address" required>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email" required>
+                </label>
+                <button type="submit">Place Order</button>
+            </form>
+            <div id="orderSuccess" style="display:none;">
+                <p>Thank you for your order!</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
